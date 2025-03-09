@@ -67,3 +67,7 @@ sleep $((RANDOM % 5)) # Ping local inofensivo
 
 # FEAT: Reproducir sonido de alerta
 paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga 2>/dev/null
+
+# FEAT: "Encriptar" archivo (Base64)
+echo "🔒 Encriptando..."
+base64 /tmp/infectado.log > /tmp/infectado.enc
