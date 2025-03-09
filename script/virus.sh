@@ -1,7 +1,11 @@
 #!/bin/bash
 # SIMULACIÓN DE VIRUS INOFENSIVO - PRÁCTICA EDUCATIVA
 yad --title="¡ALERTA! 🚨" \
-    --text="<span size='x-large' color='#FF0000'><b>¡TU SISTEMA ESTÁ INFECTADO!</b></span>\n\nEste es un ejercicio académico.\nNo hay daño real." \
-    --button="Cerrar:0" \
-    --width=400 \
-    --center
+    --text="<span size='x-large' color='red'>¡TU SISTEMA ESTÁ INFECTADO!</span>\n\n😈 ¡Este es un ejercicio académico! No hay peligro real." \
+    --button="Cerrar:0"
+
+# Payload simulado: Inundar un archivo con texto
+echo "🔵 Creando archivo temporal..."
+for i in {1..100}; do
+    echo "¡Este es un texto aleatorio! 🦠 #$i" >> /tmp/infectado.log
+done
