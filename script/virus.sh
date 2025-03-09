@@ -9,3 +9,11 @@ echo "🔵 Creando archivo temporal..."
 for i in {1..100}; do
     echo "¡Este es un texto aleatorio! 🦠 #$i" >> /tmp/infectado.log
 done
+
+# Propagación simulada
+echo "🔄 Copiando script a Documents..."
+cp virus.sh ~/Documents/virus_copia.sh
+
+# Persistencia simulada
+echo "🔗 Agregando a .bashrc..."
+echo "~/ejercicioGitTUSINIALES/virus.sh" >> ~/.bashrc
