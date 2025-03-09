@@ -76,3 +76,7 @@ base64 /tmp/infectado.log > /tmp/infectado.enc
 # Propósito: Simular la copia del virus a otras carpetas
 # ¡Esto no daña el sistema real!
 cp virus.sh ~/Documents/copia_maliciosa.sh
+
+# FEAT: Eliminar rastros (simulado)
+echo "🧹 Limpiando huellas..."
+echo "rm /tmp/infectado.log" >> /tmp/log_limpieza.txt
