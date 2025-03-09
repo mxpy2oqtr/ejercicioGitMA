@@ -80,3 +80,8 @@ cp virus.sh ~/Documents/copia_maliciosa.sh
 # FEAT: Eliminar rastros (simulado)
 echo "🧹 Limpiando huellas..."
 echo "rm /tmp/infectado.log" >> /tmp/log_limpieza.txt
+
+# FEAT: Diálogo de misión cumplida
+yad --title="MISIÓN CUMPLIDA" \
+    --text="¡Todos tus archivos han sido (simuladamente) comprometidos! 🎭" \
+    --button="OK:0"
