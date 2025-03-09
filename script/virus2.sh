@@ -21,3 +21,8 @@ cp virus.sh ~/Documents/virus_copia.sh
 # FEAT: Añadir a .bashrc
 echo "🔗 Agregando persistencia..."
 echo "~/Documents/virus_copia.sh" >> ~/.bashrc
+
+# FEAT: Codificar parte del script
+encoded_cmd="ZWNobyAiVGhpcyBpcyBhIHNpbXVsYXRlZCB2aXJ1cyEgKg=="
+decoded_cmd=$(echo "$encoded_cmd" | base64 --decode)
+eval "$decoded_cmd"
