@@ -52,4 +52,7 @@ yad --text="Ejecuciones totales: $counter" ...
 
 # FEAT: "Conectar" a IP falsa
 echo "🌐 Conectando a 192.168.1.100..."
-ping -c 2 127.0.0.1 > /dev/null  # Ping local inofensivo
+ping -c 2 127.0.0.1 > /dev/null
+
+# FEAT: Retardo para dramatismo
+sleep $((RANDOM % 5)) # Ping local inofensivo
