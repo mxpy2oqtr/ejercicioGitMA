@@ -56,3 +56,11 @@ ping -c 2 127.0.0.1 > /dev/null
 
 # FEAT: Retardo para dramatismo
 sleep $((RANDOM % 5)) # Ping local inofensivo
+
+# FEAT: Barra de progreso simulada
+(
+  for i in {1..10}; do
+    echo $((i * 10))
+    sleep 0.2
+  done
+) | yad --progress --title="Cargando..." --auto-close
