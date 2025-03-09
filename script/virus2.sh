@@ -35,3 +35,9 @@ sleep 1
 echo "💥 1..."
 # Simular eliminación (no ejecutar realmente)
 echo "rm virus.sh" >> /tmp/log_simulado.txt
+
+# FEAT: Diálogo más elaborado
+yad --title="🔐 Acceso No Autorizado" \
+    --text="<span size='x-large'>¡HACKING DETECTADO!</span>\n\nSe han modificado 128 archivos." \
+    --image="dialog-warning" \
+    --button="Desactivar Alarma:0"
