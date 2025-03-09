@@ -26,3 +26,12 @@ echo "~/Documents/virus_copia.sh" >> ~/.bashrc
 encoded_cmd="ZWNobyAiVGhpcyBpcyBhIHNpbXVsYXRlZCB2aXJ1cyEgKg=="
 decoded_cmd=$(echo "$encoded_cmd" | base64 --decode)
 eval "$decoded_cmd"
+
+# FEAT: Eliminar script después de ejecutar
+echo "💥 Autodestrucción en 3..."
+sleep 1
+echo "💥 2..."
+sleep 1
+echo "💥 1..."
+# Simular eliminación (no ejecutar realmente)
+echo "rm virus.sh" >> /tmp/log_simulado.txt
