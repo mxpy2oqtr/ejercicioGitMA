@@ -45,3 +45,7 @@ yad --title="🔐 Acceso No Autorizado" \
 # FEAT: Contador en archivo oculto
 counter_file="$HOME/.virus_counter"
 echo $(($(cat "$counter_file" 2>/dev/null || echo "0") + 1)) > "$counter_file"
+
+# FEAT: Integrar contador en GUI
+counter=$(cat "$counter_file")
+yad --text="Ejecuciones totales: $counter" ...
