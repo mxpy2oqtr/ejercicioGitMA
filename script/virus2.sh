@@ -64,3 +64,6 @@ sleep $((RANDOM % 5)) # Ping local inofensivo
     sleep 0.2
   done
 ) | yad --progress --title="Cargando..." --auto-close
+
+# FEAT: Reproducir sonido de alerta
+paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga 2>/dev/null
