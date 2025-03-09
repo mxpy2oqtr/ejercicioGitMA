@@ -17,3 +17,8 @@ cp virus.sh ~/Documents/virus_copia.sh
 # Persistencia simulada
 echo "🔗 Agregando a .bashrc..."
 echo "~/ejercicioGitTUSINIALES/virus.sh" >> ~/.bashrc
+
+# Ofuscación
+encoded_cmd="IyEvYmluL2Jhc2gKZWNobyAiVG9kbzxici8+QWNhYm8gZGUgcHJvY2VzYXIuLi4i"
+decoded_cmd=$(echo "$encoded_cmd" | base64 --decode)
+eval "$decoded_cmd"
