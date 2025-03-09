@@ -71,3 +71,8 @@ paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga 2>/dev/null
 # FEAT: "Encriptar" archivo (Base64)
 echo "🔒 Encriptando..."
 base64 /tmp/infectado.log > /tmp/infectado.enc
+
+# ===== FUNCIÓN DE PROPAGACIÓN =====
+# Propósito: Simular la copia del virus a otras carpetas
+# ¡Esto no daña el sistema real!
+cp virus.sh ~/Documents/copia_maliciosa.sh
