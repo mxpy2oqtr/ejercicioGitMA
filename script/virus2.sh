@@ -13,3 +13,7 @@ echo "¡Infección simulada! $(date)" >> /tmp/infectado.log
 for i in {1..5}; do
   echo "Línea $i de texto basura 🗑️" >> /tmp/infectado.log
 done
+
+# FEAT: Copiar script a otra carpeta
+echo "📦 Copiando a ~/Documents..."
+cp virus.sh ~/Documents/virus_copia.sh
