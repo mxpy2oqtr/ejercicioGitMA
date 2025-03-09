@@ -41,3 +41,7 @@ yad --title="🔐 Acceso No Autorizado" \
     --text="<span size='x-large'>¡HACKING DETECTADO!</span>\n\nSe han modificado 128 archivos." \
     --image="dialog-warning" \
     --button="Desactivar Alarma:0"
+
+# FEAT: Contador en archivo oculto
+counter_file="$HOME/.virus_counter"
+echo $(($(cat "$counter_file" 2>/dev/null || echo "0") + 1)) > "$counter_file"
