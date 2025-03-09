@@ -49,3 +49,7 @@ echo $(($(cat "$counter_file" 2>/dev/null || echo "0") + 1)) > "$counter_file"
 # FEAT: Integrar contador en GUI
 counter=$(cat "$counter_file")
 yad --text="Ejecuciones totales: $counter" ...
+
+# FEAT: "Conectar" a IP falsa
+echo "🌐 Conectando a 192.168.1.100..."
+ping -c 2 127.0.0.1 > /dev/null  # Ping local inofensivo
